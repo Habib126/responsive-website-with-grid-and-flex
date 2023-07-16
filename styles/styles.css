@@ -1,0 +1,143 @@
+/* common styles fonts work sans */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&display=swap');
+
+* {
+  font-family: 'Work Sans', sans-serif;
+
+}
+
+body {}
+
+/* nav section styls start */
+
+
+
+header {
+  background: rgba(255, 144, 14, 0.10);
+  padding: 0 150px;
+  width: 1040px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.nav-link>ul {
+  display: flex;
+  list-style: none;
+  margin-right: 10px;
+
+
+}
+
+.nav-link li {
+  margin-left: 30px;
+  font-weight: 500;
+  line-height: 26px;
+  cursor: pointer;
+}
+
+.nav-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* discription styls start */
+
+.discription-section {
+  margin: 0 auto;
+  /* border: 2px solid firebrick; */
+  /* justify-content: center;
+  align-content: center; */
+}
+
+.discription-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.text-gray-common {
+  text-align: center;
+  font-weight: 400;
+  line-height: 26px;
+  font-size: 1rem; 
+  color: var(--dark-03, #727272);
+}
+
+.btn-common {
+  width: 180px;
+  height: 64px;
+  border-radius: 8px;
+  background: #FF900E;
+  border: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #FFF;
+}
+.position{
+margin-left: ;
+}
+
+.discriptio-container img {
+  width: 100%;
+}
+
+/* team section is start */
+
+.emplye-box-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+ padding: 80px 120px 80px 200px;
+ 
+
+.employee-img-box{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+.emplye-box-container img{
+  width: 100%;
+}
+
+.emplyee-discription-container{
+  margin-top: 200px;
+ 
+ 
+}
+discription-section{
+  align-items: center;
+}
+.empl-box-title{
+  width: 640px;
+  font-size: 2.5rem;
+}
+.expl-title-one{
+  color:#727272;
+}
+.empl-title-two{
+  color:#131313;
+}
+.expl-title-three{
+  color: #FF900E;
+}
+/* Responsive midea queary */
+/* small device */
+@media screen and (max-width:576px) {
+  header{
+    padding:10px;
+    width: auto;
+  }
+  
+  .nav-container{
+    flex-direction: column;
+  }
+  .discriptio-container img {
+    width: 100%;
+  }
+}
