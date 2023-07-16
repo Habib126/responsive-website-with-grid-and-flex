@@ -48,10 +48,10 @@ header {
 /* discription styls start */
 
 .discription-section {
+  max-width: 800px;
+  text-align: center;
   margin: 0 auto;
-  /* border: 2px solid firebrick; */
-  /* justify-content: center;
-  align-content: center; */
+
 }
 
 .discription-title {
@@ -64,7 +64,7 @@ header {
   text-align: center;
   font-weight: 400;
   line-height: 26px;
-  font-size: 1rem; 
+  font-size: 1rem;
   color: var(--dark-03, #727272);
 }
 
@@ -78,8 +78,9 @@ header {
   font-weight: 600;
   color: #FFF;
 }
-.position{
-margin-left: ;
+
+.position {
+  margin-left: ;
 }
 
 .discriptio-container img {
@@ -88,56 +89,89 @@ margin-left: ;
 
 /* team section is start */
 
-.emplye-box-container{
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
- padding: 80px 120px 80px 200px;
- 
+main {
+  max-width: 1040px;
+  margin: 70px auto;
 
-.employee-img-box{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 5px;
 }
 
-.emplye-box-container img{
+.emplye-box-container {
+  display: flex;
+  align-items: center;
+}
+
+.employee-img-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.emplye-box-container img {
   width: 100%;
 }
 
-.emplyee-discription-container{
-  margin-top: 200px;
- 
- 
+.emplyee-discription-container {
+  padding-left: 70px;
+  padding-right: 70px;
 }
-discription-section{
-  align-items: center;
+
+.empl-box-title {
+  font-size: 2.8rem;
 }
-.empl-box-title{
-  width: 640px;
-  font-size: 2.5rem;
+
+.expl-title-one {
+  color: #727272;
+  font-weight: 500;
 }
-.expl-title-one{
-  color:#727272;
+
+.empl-title-two {
+  color: #131313;
+  font-weight: 700;
 }
-.empl-title-two{
-  color:#131313;
-}
-.expl-title-three{
+
+.expl-title-three {
   color: #FF900E;
+  font-weight: 700;
 }
+
 /* Responsive midea queary */
 /* small device */
 @media screen and (max-width:576px) {
-  header{
-    padding:10px;
+  header {
+    padding: 10px;
     width: auto;
+    margin: 0 auto;
   }
-  
-  .nav-container{
+
+  .nav-container,
+  .emplye-box-container {
     flex-direction: column;
   }
+
   .discriptio-container img {
     width: 100%;
+  }
+
+  .employee-img-box {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    margin: 0 auto;
+  }
+
+}
+
+
+@media screen and (min-width: 576px) and (max-width:992px) {
+  header {
+    padding: 10px;
+    width: auto;
+  }
+
+  .nav-container,
+  .emplye-box-container {
+    flex-direction: column;
   }
 }
