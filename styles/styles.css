@@ -134,6 +134,81 @@ main {
   font-weight: 700;
 }
 
+/* award container style start  */
+.award-container {
+  max-width: 1040px;
+  display: flex;
+  margin-top: 130px;
+  gap: 50px;
+}
+
+.award-container>img {
+  width: 70%;
+}
+
+.award-title {
+  width: 468px;
+  color: #131313;
+  font-size: 3rem;
+  font-weight: 700;
+  border-left: 5px solid sandybrown;
+  padding-left: 10px;
+}
+
+.item {
+  width: 586px;
+  height: 171px;
+  border-radius: 8px;
+  background: #FFF;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.item h3 {
+  color: #131313;
+  font-size: 1.1rem;
+  font-weight: 600;
+
+}
+
+.item p {
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.over-btn {
+  width: 242px;
+  height: 100px;
+  border-radius: 8px;
+  background: #FF900E;
+  margin-top: 0;
+  position: relative;
+  border: 100px;
+}
+
+.extra {
+  color: #FFF;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 50px;
+  /* 107.692% */
+}
+
+.over-small {
+  color: #FFF;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+
+
+/* */
+
 /* Responsive midea queary */
 /* small device */
 @media screen and (max-width:576px) {
@@ -144,7 +219,8 @@ main {
   }
 
   .nav-container,
-  .emplye-box-container {
+  .emplye-box-container,
+  .award-container {
     flex-direction: column;
   }
 
@@ -157,8 +233,24 @@ main {
     grid-template-columns: 1fr;
   }
 
+  .award-container {
+    margin: 0 auto;
+    align-items: center;
+  }
+
   main {
     margin: 0 auto;
+
+  }
+
+  .award-container img {
+    width: 0;
+  }
+
+  .item {
+    width: 380px;
+    margin: 0 auto;
+    align-items: center;
   }
 
 }
@@ -171,7 +263,28 @@ main {
   }
 
   .nav-container,
-  .emplye-box-container {
+  .emplye-box-container,
+  .award-container {
     flex-direction: column;
+  }
+
+  .award-container {
+    margin: 0 auto;
+    align-items: center;
+
+  }
+
+  .text-gray-common {
+    width: 586px;
+    height: 171px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .medium {
+    padding-left: 100px;
   }
 }
